@@ -1,0 +1,17 @@
+{
+  "name": "PSInc3",
+  "homepage": "https://github.com/dogankutbay/psinc3",
+  "description": "Website Demo",
+  "main": "index.html",
+  "keywords": [
+    "demo"
+  ],
+  "authors": [
+    "Dogan Kutbay",
+    "Ruslan Yatsevich"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
