@@ -1,5 +1,6 @@
 @import 'fonts';
 
+
 $montserrat : 'Montserrat', sans-serif;
 $varela : 'Varela Round', sans-serif;
 
@@ -54,8 +55,7 @@ ul{
   animation-delay: $ms;
 }
 
-@import 'home';
-
+@import '_home';
 
 footer{
   background:$darkpurple;
