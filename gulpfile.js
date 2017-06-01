@@ -53,7 +53,7 @@ gulp.task('minify.js', function () {
 });
 
 gulp.task('minify.css', ['scss'], function() {
-    return gulp.src(['src/css/*.css', 'src/bower_components/bootstrap/dist/css/bootstrap.min.css'])
+    return gulp.src(['src/bower_components/bootstrap/dist/css/bootstrap.min.css', 'src/css/*.css' ])
         .pipe(cleanCSS())
         .pipe(concat('all.css'))
         .pipe(gulp.dest('build/css'));
