@@ -254,7 +254,7 @@ header li.active a {
   justify-content: space-around; }
 
 .certifications img {
-  height: 50px; }
+  max-height: 90px; }
 
 footer {
   background: #30222c;
