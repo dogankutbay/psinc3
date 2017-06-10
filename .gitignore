@@ -4,5 +4,4 @@
 .idea/
 src/bower_components/
 node_modules/
-build/
 watcherTasks.xml
