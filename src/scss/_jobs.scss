@@ -1,0 +1,12 @@
+.main-section.jobs{
+  background: url(../images/jobs.jpg) center no-repeat rgb(0, 0, 0);
+}
+.jobs_container {
+  h1,h2,h3{
+    color:$darkpurple;
+  }
+  iframe{
+    width: 100%;
+    min-height: 600px;
+  }
+}

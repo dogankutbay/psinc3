@@ -1,3 +1,4 @@
+
 header{
   width:100%;
   background-color:$darkpurple;
@@ -20,7 +21,7 @@ header li{
     text-decoration:none;
   }
   a:hover, a:focus{
-    color:white;
+    color:black;
     background:$green;
     text-decoration:none;
     box-shadow:0 3px 0 darken($green, 25%);
@@ -28,7 +29,7 @@ header li{
 }
 header li.active{
   a{
-    color:white;
+    color:black;
     background:$green;
     text-decoration:none;
     box-shadow:0 3px 0 darken($green, 25%);
@@ -36,9 +37,9 @@ header li.active{
 }
 
 .main-section{
-  background: url(../images/bg.jpeg) center no-repeat rgb(0, 0, 0);
+  background: url(../images/bg.jpg) center no-repeat rgb(0, 0, 0);
   background-size:cover;
-  height: 45vh;
+  height: 20vh;
   visibility: visible;
   width: 100%;
   color:white;
@@ -48,7 +49,7 @@ header li.active{
   flex-direction: column;
   position:relative;
   h1{
-    font-size:$px50;
+    font-size:$px24;
   }
 }
 .main-section:before{

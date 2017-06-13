@@ -5,8 +5,8 @@ $montserrat : 'Montserrat', sans-serif;
 $varela : 'Varela Round', sans-serif;
 
 // Colors
-$darkpurple:#30222c;
-$green:#3bbf59;
+$darkpurple:#5a1c65;
+$green:#9fca9d;
 $background-color:#f5f7f8;
 
 //Font sizes
@@ -23,7 +23,6 @@ body,html{
   font-size:16px;
   font-family: $varela;
   background-color:$background-color;
-
 }
 h1,h2,h3,h4,h5,h6{
   font-family:$montserrat;
@@ -55,7 +54,13 @@ ul{
   animation-delay: $ms;
 }
 
-@import '_home';
+
+@import 'home';
+@import 'contracts';
+@import 'news';
+@import 'jobs';
+@import 'contact-us';
+
 
 footer{
   background:$darkpurple;

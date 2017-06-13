@@ -1,0 +1,16 @@
+.main-section.news{
+  background: url(../images/news.jpg) center no-repeat rgb(0, 0, 0);
+}
+.news_container
+{
+  background:white;
+  padding:15px;
+  margin-top:15px;
+  box-shadow: 0 16px 38px -21px rgba(0,0,0,.5);
+  h1,h2,h3{
+    color:$darkpurple;
+  }
+  img {
+    cursor: zoom-in;
+  }
+}
