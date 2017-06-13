@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>PSINC3 DEMO</title>
+    <title>PARAMOUNT SOLUTIONS | Home</title>
 <link rel="stylesheet" href="css/all.css">
 
 </head>
@@ -17,22 +17,22 @@
             </div>
             <div class="col-md-10 text-right">
                 <ul>
-                    <li class="active"><a href="#" title="Homepage of Paramount Solutions">Home</a></li>
-                    <li><a href="#" title="About Paramount Solutions">About</a></li>
-                    <li><a href="#" id="services" title="Services of Paramount Solutions">Services</a></li>
-                    <li><a href="#" title="Contracts of Paramount Solutions">Contracts</a></li>
-                    <li><a href="#" title="News from Paramount Solutions">News</a></li>
-                    <li><a href="#" title="Job openings of Paramount Solutions">Jobs</a></li>
-                    <li><a href="#" title="Contact Paramount Solutions">Contact</a></li>
+                    <li class="active"><a href="index.html" title="Homepage of Paramount Solutions">Home</a></li>
+                    <li><a href="about.html" title="About Paramount Solutions">About</a></li>
+                    <li><a href="#" title="Services of Paramount Solutions">Services</a></li>
+                    <li><a href="contracts.html" title="Contracts of Paramount Solutions">Contracts</a></li>
+                    <li><a href="news.html" title="News from Paramount Solutions">News</a></li>
+                    <li><a href="jobs.html" title="Job openings of Paramount Solutions">Jobs</a></li>
+                    <li><a href="contact.html" title="Contact Paramount Solutions">Contact</a></li>
                 </ul>
             </div>
     </header>
 
     <!-- Main Section Beings -->
     <div class="main-section">
-        <h1 class="animated fadeInLeft">RESPONSIVE</h1><br>
-        <h1 class="animated fadeInRight green">RELIABLE</h1><br>
-        <h1 class="animated fadeInLeft">RESOURCEFUL</h1>
+        <h1 class="animated fadeInLeft">TEXT 1</h1>
+        <h1 class="animated fadeInRight green">TEXT 2</h1>
+        <h1 class="animated fadeInLeft">TEXT 3</h1>
     </div>
     <!-- Main Section Ends -->
 
@@ -42,30 +42,30 @@
                     Paramount Solutions & Global Services, Inc. is a world-class organization providing Professional and Technical Services since its inception in 2004 to both government and commercial clients.
                     As a certified minority woman-owned small business headquartered in Delray Beach, Florida we provide our customers with the following specialties:
                 </p>
-        <div class="specialities" id="services-part">
+        <div class="specialities">
         <ul>
-            <li class="s1 animated">
+            <li class="s1">
                 <div class="speciality-image">
                     <img src="images/systems-engineering.png" alt="Systems Engineering" class="img-circle img-responsive">
                 </div>
                 <div class="speciality-text"><h1>Systems Engineering</h1></div>
                 <div class="border"></div>
             </li>
-            <li class="s2 animated">
+            <li class="s2">
                 <div class="speciality-image">
                     <img src="images/information-technology.png" alt="Information Technology" class="img-circle img-responsive">
                 </div>
                 <div class="speciality-text pull-right"><h1>Information Technology</h1></div>
                 <div class="border"></div>
             </li>
-            <li class="s3 animated">
+            <li class="s3">
                 <div class="speciality-image">
                     <img src="images/train.png" alt="Process Improvement and Training" class="img-circle img-responsive">
                 </div>
                 <div class="speciality-text"><h1>Process Improvement & Training</h1></div>
                 <div class="border"></div>
             </li>
-            <li class="s4 animated">
+            <li class="s4">
                 <div class="speciality-image">
                     <img src="images/logistics.png" alt="Logistics and Administrative" class="img-circle img-responsive">
                 </div>
@@ -146,28 +146,5 @@
 
 <script src="js/all.js"></script>
 
-    <script>
-        function isScrolledIntoView(elem) {
-            var docViewTop = $(window).scrollTop();
-            var docViewBottom = docViewTop + $(window).height();
-
-            var elemTop = $(elem).offset().top;
-            var elemBottom = elemTop + 400;
-
-            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-        }
-
-        $(window).scroll(function () {
-            $('.specialities').each(function () {
-                if (isScrolledIntoView(this) === true) {
-                    $('.s1').addClass('fadeInLeft');
-                    $('.s2').addClass('fadeInRight');
-                    $('.s3').addClass('fadeInLeft');
-                    $('.s4').addClass('fadeInRight');
-                }
-            });
-        });
-
-    </script>
 </body>
 </html>
