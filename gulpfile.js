@@ -59,7 +59,12 @@ gulp.task('minify.css', ['scss'], function() {
         .pipe(gulp.dest('build/css'));
 });
 
-gulp.task('change.index', ['minify.images', 'minify.js', 'minify.css'], function() {
+gulp.task('copy.html', function() {
+    return gulp.src(['src/*.html', '!src/index.html'])
+        .pipe(gulp.dest('build/'))
+});
+
+gulp.task('change.index', ['minify.images', 'minify.js', 'minify.css', 'copy.html'], function() {
     return gulp.src('src/index.html')
         .pipe(htmlreplace({
             js: 'js/all.js',
