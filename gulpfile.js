@@ -11,7 +11,7 @@ var imagemin = require('gulp-imagemin');
 var clean = require('gulp-clean');
 var htmlreplace = require('gulp-html-replace');
 var rename = require('gulp-rename');
-var add = require('gulp-add-src');
+var addsrc = require('gulp-add-src');
 var connect = require('gulp-connect');
 // var history = require('connect-history-api-fallback');
 
@@ -43,6 +43,7 @@ gulp.task('minify.images', function() {
 gulp.task('minify.js', function () {
     gulp.src(['src/index.html'])
         .pipe(gsi())
+        .pipe(addsrc.append('src/js/popupImage.js'))
         .pipe(uglify({mangle: false}))
         .pipe(concat('all.js'))
         .pipe(gulp.dest('build/js'));
