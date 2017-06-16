@@ -64,8 +64,8 @@ gulp.task('copy.html', function() {
         .pipe(gulp.dest('build/'))
 });
 
-gulp.task('change.index', ['minify.images', 'minify.js', 'minify.css', 'copy.html'], function() {
-    return gulp.src('src/index.html')
+gulp.task('change.index', ['minify.images', 'minify.js', 'minify.css'], function() {
+    return gulp.src('src/*.html')
         .pipe(htmlreplace({
             js: 'js/all.js',
             css: 'css/all.css'
