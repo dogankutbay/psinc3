@@ -170,6 +170,8 @@ header li.active a {
   width: 41%;
   padding: 0 20px 20px 30px;
   text-align: right; }
+  .speciality-text a {
+    color: inherit; }
 
 .secondary-section li:nth-child(even) {
   justify-content: flex-end; }
@@ -325,6 +327,10 @@ header li.active a {
 
 .contactus_container {
   min-height: 45vh; }
+
+.services li {
+  list-style: disc;
+  list-style-position: inside; }
 
 footer {
   background: #5a1c65;

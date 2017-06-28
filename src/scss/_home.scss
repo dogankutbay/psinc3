@@ -103,6 +103,9 @@ header li.active{
   width: 41%;
   padding: 0 20px 20px 30px;
   text-align: right;
+  a{
+    color:inherit;
+  }
 }
 .secondary-section li:nth-child(even){
   justify-content: flex-end;
