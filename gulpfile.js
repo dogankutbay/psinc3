@@ -2,6 +2,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
 var gsi = require('gulp-scripts-index');
 // var gsti = require('./custom_modules/gulp-styles-index');
@@ -24,7 +25,12 @@ gulp.task('clean', function () {
 gulp.task('scss', function () {
     return gulp.src('src/scss/global.scss')
         // .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({ style: 'expanded' }))
+        // .pipe(autoprefixer({
+        //     browsers: ['last 2 versions', 'ie 8', 'ie 9'],
+        //     cascade: false
+        // }))
+        .on('error', sass.logError)
         // .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('src/css'));
 });
@@ -55,7 +61,11 @@ gulp.task('minify.js', function () {
 
 gulp.task('minify.css', ['scss'], function() {
     return gulp.src(['src/bower_components/bootstrap/dist/css/bootstrap.min.css', 'src/css/*.css' ])
-        .pipe(cleanCSS())
+        .pipe(cleanCSS())    // {compatibility: 'ie8'}
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions', 'ie 8', 'ie 9'],
+            cascade: false
+        }))
         .pipe(concat('all.css'))
         .pipe(gulp.dest('build/css'));
 });
