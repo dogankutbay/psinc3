@@ -40,6 +40,7 @@ header li.active{
   background: url(../images/main.jpg) center no-repeat rgb(0, 0, 0);
   background-size:cover;
   height: 20vh;
+  min-height:150px;
   visibility: visible;
   width: 100%;
   color:white;
@@ -71,8 +72,7 @@ header li.active{
   margin:50px 0;
 }
 .secondary-section li{
-  display: flex;
-  align-items: center;
+
 }
 .secondary-section li:nth-child(even) {
   position: relative;
@@ -98,6 +98,7 @@ header li.active{
   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.16);
 }
 .speciality-text{
+  top:50px;
   position: relative;
   float: left;
   width: 41%;

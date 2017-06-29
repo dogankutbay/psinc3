@@ -109,6 +109,7 @@ header li.active a {
   background: url(../images/main.jpg) center no-repeat black;
   background-size: cover;
   height: 20vh;
+  min-height: 150px;
   visibility: visible;
   width: 100%;
   color: white;
@@ -137,10 +138,6 @@ header li.active a {
 .specialities {
   margin: 50px 0; }
 
-.secondary-section li {
-  display: flex;
-  align-items: center; }
-
 .secondary-section li:nth-child(even) {
   position: relative;
   margin-bottom: 50px;
@@ -165,6 +162,7 @@ header li.active a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16); }
 
 .speciality-text {
+  top: 50px;
   position: relative;
   float: left;
   width: 41%;
@@ -261,44 +259,48 @@ header li.active a {
 .main-section.contracts {
   background: url(../images/contracts.jpg) center no-repeat black; }
 
-.all-contracts h1, .all-contracts h2 {
-  color: #5a1c65; }
-.all-contracts .nav-tabs {
-  border-bottom: 2px solid #DDD; }
-.all-contracts .nav-tabs > li.active > a, .all-contracts .nav-tabs > li.active > a:focus, .all-contracts .nav-tabs > li.active > a:hover {
-  border-width: 0; }
-.all-contracts .nav-tabs > li > a {
-  border: none;
-  color: #666; }
-.all-contracts .nav-tabs > li.active > a, .all-contracts .nav-tabs > li > a:hover {
-  border: none;
-  color: #5a1c65 !important;
-  background: rgba(159, 202, 157, 0.3); }
-.all-contracts .nav-tabs > li > a::after {
-  content: "";
-  background: #9fca9d;
-  height: 2px;
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  bottom: -1px;
-  transition: all 250ms ease 0s;
-  transform: scale(0); }
-.all-contracts .nav-tabs > li.active > a::after, .all-contracts .nav-tabs > li:hover > a::after {
-  transform: scale(1); }
-.all-contracts .tab-nav > li > a::after {
-  background: #9fca9d none repeat scroll 0 0;
-  color: #fff; }
-.all-contracts .tab-pane {
-  padding: 15px 0; }
-.all-contracts .tab-content {
-  padding: 20px; }
-.all-contracts .card {
-  background: #FFF none repeat scroll 0 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  margin-bottom: 30px; }
-.all-contracts ul {
-  list-style: inside; }
+.all-contracts {
+  margin: 40px auto; }
+  .all-contracts h1, .all-contracts h2 {
+    color: #5a1c65; }
+  .all-contracts .nav-tabs {
+    border-bottom: 2px solid #DDD; }
+  .all-contracts .nav-tabs > li.active > a, .all-contracts .nav-tabs > li.active > a:focus, .all-contracts .nav-tabs > li.active > a:hover {
+    border-width: 0; }
+  .all-contracts .nav-tabs > li > a {
+    border: none;
+    color: #666; }
+  .all-contracts .nav-tabs > li.active > a, .all-contracts .nav-tabs > li > a:hover {
+    border: none;
+    color: #5a1c65 !important;
+    background: rgba(159, 202, 157, 0.3); }
+  .all-contracts .nav-tabs > li > a::after {
+    content: "";
+    background: #9fca9d;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -1px;
+    transition: all 250ms ease 0s;
+    transform: scale(0); }
+  .all-contracts .nav-tabs > li.active > a::after, .all-contracts .nav-tabs > li:hover > a::after {
+    transform: scale(1); }
+  .all-contracts .tab-nav > li > a::after {
+    background: #9fca9d none repeat scroll 0 0;
+    color: #fff; }
+  .all-contracts .tab-pane {
+    padding: 15px 0; }
+  .all-contracts .tab-content {
+    padding: 20px; }
+  .all-contracts .card {
+    background: #FFF none repeat scroll 0 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px; }
+    .all-contracts .card .row-eq-height {
+      align-items: baseline; }
+  .all-contracts ul {
+    list-style: inside; }
 
 .main-section.news {
   background: url(../images/news.jpg) center no-repeat black; }
@@ -326,7 +328,8 @@ header li.active a {
   background: url(../images/contact-us.jpg) center no-repeat black; }
 
 .contactus_container {
-  min-height: 45vh; }
+  min-height: 45vh;
+  margin: 40px auto; }
 
 .services li {
   list-style: disc;
