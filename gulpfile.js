@@ -11,6 +11,7 @@ var concat = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
 var clean = require('gulp-clean');
 var htmlreplace = require('gulp-html-replace');
+var replace = require('gulp-replace');
 var rename = require('gulp-rename');
 var addsrc = require('gulp-add-src');
 var connect = require('gulp-connect');
@@ -67,6 +68,7 @@ gulp.task('minify.css', ['scss'], function() {
             cascade: false
         }))
         .pipe(concat('all.css'))
+        .pipe(replace(/(..\/)+images/g, '../images'))
         .pipe(gulp.dest('build/css'));
 });
 
