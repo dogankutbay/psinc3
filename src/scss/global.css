@@ -51,11 +51,11 @@ body, html {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Varela Round", "Trebuchet MS", Helvetica, sans-serif;
   background-color: #f5f7f8; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-weight: 700; }
 
 ul {
@@ -78,7 +78,7 @@ header {
 header li {
   display: inline-block;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
   header li a {
     color: white;
     display: block;
