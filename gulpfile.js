@@ -63,10 +63,10 @@ gulp.task('minify.js', function () {
 gulp.task('minify.css', ['scss'], function() {
     return gulp.src(['src/bower_components/bootstrap/dist/css/bootstrap.min.css', 'src/css/*.css' ])
         .pipe(cleanCSS())    // {compatibility: 'ie8'}
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions', 'ie 8', 'ie 9'],
-            cascade: false
-        }))
+        // .pipe(autoprefixer({
+        //     browsers: ['last 2 versions', 'ie 8', 'ie 9'],
+        //     cascade: false
+        // }))
         .pipe(concat('all.css'))
         .pipe(replace(/(..\/)+images/g, '../images'))
         .pipe(gulp.dest('build/css'));
