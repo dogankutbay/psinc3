@@ -97,3 +97,6 @@ footer li.active{
     box-shadow:0 3px 0 darken($green, 25%);
   }
 }
+
+// Responsive part should always stay at bottom
+@import 'responsive';

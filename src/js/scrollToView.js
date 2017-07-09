@@ -22,4 +22,9 @@
         });
     });
 
+
+    $('.menu-btn').on('click', function() {
+        $('.bar').toggleClass('animate');
+        $('.main-menu').toggleClass('show-menu');
+    })
 })();
