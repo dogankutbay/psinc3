@@ -112,11 +112,14 @@ header li.active a {
   text-decoration: none;
   box-shadow: 0 3px 0 #549651; }
 
+.menu-btn {
+  display: none; }
+
 .main-section {
   background: url(../images/main.jpg) center no-repeat black;
   background-size: cover;
   height: 20vh;
-  min-height: 150px;
+  min-height: 200px;
   visibility: visible;
   width: 100%;
   color: white;
@@ -375,3 +378,145 @@ footer li.active a {
   background: #9fca9d;
   text-decoration: none;
   box-shadow: 0 3px 0 #549651; }
+
+@media screen and (max-width: 1024px) {
+  body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; }
+  header {
+    position: relative;
+    z-index: 9999; }
+  .main-menu {
+    position: fixed;
+    top: 83px;
+    left: -100%;
+    padding: 0;
+    background: rgba(159, 202, 157, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    -webkit-transition: left 250ms linear;
+    -moz-transition: left 250ms linear;
+    -ms-transition: left 250ms linear;
+    -o-transition: left 250ms linear;
+    transition: left 250ms linear; }
+    .main-menu ul {
+      text-align: left;
+      float: left;
+      background: #7fb87c;
+      width: 190px;
+      height: 100%;
+      box-shadow: 1px 6px 20px 7px rgba(0, 0, 0, 0.2); }
+    .main-menu li {
+      width: 100%; }
+      .main-menu li a {
+        width: 100%;
+        padding: 20px;
+        color: #264325; }
+  .main-menu.show-menu {
+    left: 0; }
+  header li.active a {
+    border-radius: 0;
+    background: #5ea65b;
+    color: white; }
+  header .col-xs-12 {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  .specialities {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0; }
+    .specialities ul {
+      padding: 0 15px; }
+    .specialities .speciality-text h1 {
+      font-size: 1.125em; }
+  .speciality-image, .speciality-text {
+    padding: 0;
+    position: static;
+    margin: 0;
+    height: auto;
+    border: none;
+    float: left;
+    text-align: left; }
+  .speciality-image {
+    width: 18%;
+    padding: 0 1%; }
+  .speciality-text {
+    width: calc(80% - 30px);
+    padding: 0 15px; }
+  .secondary-section {
+    padding: 20px 0; }
+  .secondary-section p {
+    padding: 0 20px; }
+  .secondary-section li:nth-child(odd), .secondary-section li:nth-child(even) {
+    margin-bottom: 0;
+    min-height: 0;
+    left: 0;
+    height: auto;
+    position: static;
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center; }
+  .secondary-section li:nth-child(even) .speciality-image {
+    left: 0;
+    margin-left: 0;
+    float: right; }
+  .row-eq-height {
+    flex-direction: column; }
+  .certifications .row {
+    flex-direction: column; }
+    .certifications .row img {
+      margin: 0 0 30px 0; }
+  .menu-btn {
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    margin: auto;
+    width: 35px;
+    height: 21px;
+    cursor: pointer; }
+  .bar,
+  .bar:after,
+  .bar:before {
+    width: 35px;
+    height: 3px; }
+  .bar {
+    position: relative;
+    transform: translateY(9px);
+    background: white;
+    transition: all 0ms 300ms; }
+    .bar.animate {
+      background: rgba(255, 255, 255, 0); }
+  .bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 9px;
+    background: white;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    background: white;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .bar.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .bar.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 15px 9px; }
+  .tab-pane .row-eq-height {
+    display: block; } }
