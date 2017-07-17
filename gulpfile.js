@@ -77,7 +77,12 @@ gulp.task('copy.html', function() {
         .pipe(gulp.dest('build/'))
 });
 
-gulp.task('change.index', ['minify.images', 'minify.js', 'minify.css'], function() {
+gulp.task('copy.pdf', function() {
+    return gulp.src('src/contentfiles/*.pdf')
+        .pipe(gulp.dest('build/contentfiles/'))
+});
+
+gulp.task('change.index', ['minify.images', 'minify.js', 'minify.css', 'copy.pdf'], function() {
     return gulp.src('src/*.html')
         .pipe(htmlreplace({
             js: 'js/all.js',
