@@ -82,7 +82,12 @@ gulp.task('copy.pdf', function() {
         .pipe(gulp.dest('build/contentfiles/'))
 });
 
-gulp.task('change.index', ['minify.images', 'minify.js', 'minify.css', 'copy.pdf'], function() {
+gulp.task('copy.json', function() {
+    return gulp.src('src/app.json')
+        .pipe(gulp.dest('build'))
+});
+
+gulp.task('change.index', ['minify.images', 'minify.js', 'minify.css', 'copy.pdf', 'copy.json'], function() {
     return gulp.src('src/*.html')
         .pipe(htmlreplace({
             js: 'js/all.js',
